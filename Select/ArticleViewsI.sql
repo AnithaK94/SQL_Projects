@@ -11,6 +11,7 @@ insert into Views (article_id, author_id, viewer_id, view_date) values ('3', '4'
 insert into Views (article_id, author_id, viewer_id, view_date) values ('3', '4', '4', '2019-07-21');
 /* Write a solution to find all the authors that viewed at least one of their own articles.
 Return the result table sorted by id in ascending order. */
+
 /* Using group by functions
 Select author_id as id
 From Views
@@ -19,7 +20,7 @@ group by author_id
 having count(author_id) >= 1
 order by author_id asc */
 
-# Without using Group by function
+# Using Distinct function
 Select distinct author_id as id
 from Views
 where author_id = viewer_id
