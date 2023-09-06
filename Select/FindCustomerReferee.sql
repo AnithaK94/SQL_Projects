@@ -8,6 +8,7 @@ insert into Customer (id, name, referee_id) values (3, 'Alex', '2');
 insert into Customer (id, name, referee_id) values (4, 'Bill', 0);
 insert into Customer (id, name, referee_id) values (5, 'Zack', '1');
 insert into Customer (id, name, referee_id) values (6, 'Mark', '2');
+insert into Customer (id, name, referee_id) values (7, 'Zally', '2');
 /* Find the names of the customer that are not referred by the customer with id = 2.
 Return the result table in any order. */
 Select name
