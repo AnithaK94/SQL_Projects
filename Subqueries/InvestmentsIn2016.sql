@@ -26,7 +26,7 @@ and concat(lat,lon) in (
         insurance
       GROUP BY LAT , LON
       HAVING COUNT(*) = 1
-)
+);
 /*
 # use Joins
 SELECT ROUND(SUM(tiv_2016), 2) AS tiv_2016
